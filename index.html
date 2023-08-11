@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <audio src="./1.wav" id="ad1">1</audio>
+        <audio src="./2.wav" id="ad2">2</audio>
+        <audio src="./3.mp3" id="ad3">3</audio>
+        <audio src="./4.wav" id="ad4">4</audio>
+        <audio src="./5.wav" id="ad5">5</audio>
+        <audio src="./6.wav" id="ad6">6</audio>
+        <audio src="./7.wav" id="ad7">7</audio>
+        <audio src="./8.wav" id="ad8">8</audio>
+        <div class="list"></div>
+        <div class="list">
+            <div class="item" id="it1">A</div>
+            <div class="item" id="it2">S</div>
+            <div class="item" id="it3">D</div>
+            <div class="item" id="it4">F</div>
+            <div class="item" id="it5">G</div>
+            <div class="item" id="it6">H</div>
+            <div class="item" id="it7">J</div>
+            <div class="item" id="it8">K</div>
+        </div>
+        <div class="intro">
+            <h2>Welcome to Drum Kit</h2>
+            <strong>Dont worry if you don't know how to play it<br>You can learn here </strong>
+            <div class="vid">><iframe width="560" height="315" src="https://www.youtube.com/embed/ondTlJEmPYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+       
+    </body>
+    <script>
+    audio1=document.getElementById('ad1');
+    audio2=document.getElementById('ad2');
+    audio3=document.getElementById('ad3');
+    audio4=document.getElementById('ad4');
+    audio5=document.getElementById('ad5');
+    audio6=document.getElementById('ad6');
+    audio7=document.getElementById('ad7');
+    audio8=document.getElementById('ad8');
+
+    window.addEventListener('keydown',(e)=>{
+        console.log(e.keyCode)
+        if(e.keyCode==65)
+        {
+            audio1.play();
+        const block=document.getElementById('it1');
+        block.classList.add("playing");
+        setTimeout(() => {
+            block.classList.remove("playing")
+        }, 400);
+        }
+        else if(e.keyCode==83)
+        {
+            audio2.play();
+        const block=document.getElementById('it2');
+        block.classList.add("playing");
+        setTimeout(() => {
+            block.classList.remove("playing")
+        }, 400);
+        }
+        else if(e.keyCode==68)
+        {
+            audio3.play();
+        const block=document.getElementById('it3');
+        block.classList.add("playing");
+        setTimeout(() => {
+            block.classList.remove("playing")
+        }, 400);
+        }
+        else if(e.keyCode==70)
+        {
+            audio4.play();
+        const block=document.getElementById('it4');
+        block.classList.add("playing");
+        setTimeout(() => {
+            block.classList.remove("playing")
+        }, 400);
+        }
+        else if(e.keyCode==71)
+        {
+            audio5.play();
+        const block=document.getElementById('it5');
+        block.classList.add("playing");
+        setTimeout(() => {
+            block.classList.remove("playing")
+        }, 400);
+        }
+        else if(e.keyCode==72)
+        {
+            audio6.play();
+        const block=document.getElementById('it6');
+        block.classList.add("playing");
+        setTimeout(() => {
+            block.classList.remove("playing")
+        }, 300);
+        }
+        else if(e.keyCode==74)
+        {
+            audio7.play();
+        const block=document.getElementById('it7');
+        block.classList.add("playing");
+        setTimeout(() => {
+            block.classList.remove("playing")
+        }, 300);
+        }
+        else if(e.keyCode==75)
+        {
+            audio8.play();
+        const block=document.getElementById('it8');
+        block.classList.add("playing");
+        setTimeout(() => {
+            block.classList.remove("playing")
+        }, 400);
+        }
+
+    })
+    </script>
+</html>

@@ -1,0 +1,40 @@
+body{
+    background-image: url('/forest.jpg');
+    background-size: cover;
+    
+}
+.list{
+    margin-left: 174px;
+    height: 166px;
+    width: 70vw;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    align-items: center;
+    
+}
+.item{
+    border-radius: 4px;
+    border: 1px azure;
+    margin: 0px 3px;
+    background-color: rgba(201, 127, 36, 0.405);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.playing{
+    transform: scale(1.1,1.2);
+    background-color: rgb(231, 115, 27);
+}
+.intro{
+    color: white;
+    display: inline-block;
+    width: 30vw;
+    height: 20vh;
+    text-align: center;
+    margin-left: 30vw;
+    
+}
